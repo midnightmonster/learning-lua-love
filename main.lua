@@ -6,9 +6,9 @@ end
 
 love.draw = function()
   john = john + 2
-  for multiplier = 1, 10 do
+  for multiplier = 1, 30 do
     local offset = multiplier * john / 10
-    local x = (0+offset) % 1400
+    local x = (0+offset/2) % 1400
     local y = (0+offset) % 1000
     if x > 700 then
       x = 1400 - x
