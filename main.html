@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+<title>Bouncing squares</title>
+<script>
+let john = 0
+function draw(ctx){
+  for(let multiplier = 1; multiplier <= 30; multiplier++){
+    const offset = multiplier * john / 5
+    let x = (0+offset/2) % 1400
+    let y = (0+offset) % 1000
+    if(x > 700) x = 1400 - x;
+    if(y > 500) y = 1000 - y;
+    ctx.fillRect(x,y,100,100)
+  }
+  john = john + 1
+}
+window.addEventListener('DOMContentLoaded',function(){
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'white';
+  const loop = function(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    draw(ctx);
+    requestAnimationFrame(loop);
+  }
+  loop()
+})
+</script>
+</head>
+<body style="padding:0;margin:0;">
+<canvas width=800 height=600 style="background:black; position:fixed; left:0; top:0; width:100%; height:100%;" id="c"/>
+</body>
+</html>

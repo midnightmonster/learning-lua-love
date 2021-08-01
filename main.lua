@@ -5,9 +5,9 @@ local rectangle = function(left, top, width, height)
 end
 
 love.draw = function()
-  john = john + 2
+  john = john + 1
   for multiplier = 1, 30 do
-    local offset = multiplier * john / 10
+    local offset = multiplier * john / 5
     local x = (0+offset/2) % 1400
     local y = (0+offset) % 1000
     if x > 700 then
