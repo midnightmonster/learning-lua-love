@@ -10,7 +10,7 @@ To make any progress (and have any real fun), we're going to have to do somethin
 
 We started today trying to decide what (simple, 2D) game to build. I drew an example screen of a puzzler idea I had, then talked about the simple games I programmed as a teen (Othello, LEGO-themed Minesweeper, tic-tac-toe). We did a paper prototype of Minesweeper (a pair of hand-drawn 8x8 grids and 10 rolls of 2d8 to place the mines, one person being the computer and the other being the puzzle solver), and he settled on tic-tac-toe for his first game. I am relieved that John, unlike some of his siblings I could mention, is actually willing to start small.
 
-We played a round and then talked about how to represent the board and the possible game states (X wins, O wins, tie, game not over yet). We talked through how you might go about checking a board state for whether anyone one. Some of our notes, here:
+We played a round and then talked about how to represent the board and the possible game states (X wins, O wins, tie, game not over yet). We talked through how you might go about checking a board state for whether anyone won. Some of our notes, here:
 
 <img src="journal/tic-tac-toe-board.jpg" alt="Notes about implementing a tc-tac-toe game" />
 
